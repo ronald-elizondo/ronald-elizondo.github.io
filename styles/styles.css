@@ -16,6 +16,12 @@ h1, h2, h3{
     font-style: normal;
 }
 
+header {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 
 ul {
     padding: 0;
