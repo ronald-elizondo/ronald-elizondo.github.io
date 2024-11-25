@@ -7,6 +7,8 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    color: #333;
+    background-color: #f5f5dc;
 }
 
 h1, h2, h3{
@@ -16,15 +18,32 @@ h1, h2, h3{
     font-style: normal;
 }
 
+/* Styles for header section */
 header {
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    background-color: #c4c4c4;
 }
 
-ul {
+header ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    background-color: #001f3f;
+}
+
+/* Styles for hero section */
+#hero{
+    background-color: #c4c4c4;
+    color: #001f3f;
+    & p{
+        color: #4682B4;
+    }
+}
+
+/* styles for footer */
+footer{
+    background-color: #c4c4c4;
 }
