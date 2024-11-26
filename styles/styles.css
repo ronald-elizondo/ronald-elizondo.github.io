@@ -20,30 +20,54 @@ h1, h2, h3{
 
 /* Styles for header section */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: "Source Sans 3", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    background-color: #c4c4c4;
+    background-color: #4682B4;
+    text-transform: uppercase;
 }
 
 header ul {
     padding: 0;
-    margin: 0;
+    margin: 0px 8px;
     list-style: none;
-    background-color: #001f3f;
+
+    & li{
+        margin: 0px 8px;
+        display: inline;
+    }
+    & a{
+        text-decoration: none;
+        color: #c4c4c4;
+    }
+    & a:hover{
+        text-decoration: underline;
+    }
+}
+
+#logo-navbar{
+    max-width: 24px;
+    margin: 8px 16px;
 }
 
 /* Styles for hero section */
 #hero{
-    background-color: #c4c4c4;
-    color: #001f3f;
+    background-color: #4682b4;
+    & h2{
+        text-transform: uppercase;
+        color: #c4c4c4;
+    }
     & p{
-        color: #4682B4;
+        color: #333;
     }
 }
 
 /* styles for footer */
 footer{
-    background-color: #c4c4c4;
+    background-color: #4682B4;
+    color: #c4c4c4
 }
