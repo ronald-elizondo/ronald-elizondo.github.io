@@ -37,6 +37,7 @@ header {
     font-style: normal;
     background-color: #4682B4;
     text-transform: uppercase;
+    position: relative;
 }
 
 header ul {
