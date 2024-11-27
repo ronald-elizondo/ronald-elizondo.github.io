@@ -64,14 +64,33 @@ header ul {
 
 /* Styles for hero section */
 #hero{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #4682b4;
+    min-height: 300px;
+    height: auto;
     & h2{
         text-transform: uppercase;
+        text-align: center;
+        font-size: 2.4em;
         color: #c4c4c4;
+        margin: 32px;
     }
     & p{
         color: #333;
+        font-size: 1em;
+        margin: 0px 32px;
     }
+    & img{
+        display: block;
+        margin: 32px;
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        object-fit: contain;
+    }
+    position: relative;
 }
 
 /* styles for footer */
