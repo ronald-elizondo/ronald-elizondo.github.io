@@ -40,6 +40,11 @@
   padding: 0;
 }
 
+html {
+  width: 100%;
+  max-width: 100vw;
+}
+
 body {
   line-height: 1.6;
   margin: 0 auto;
@@ -53,6 +58,11 @@ body {
   max-width: 832px;
   width: 100%;
   box-sizing: border-box;
+}
+
+strong,
+em {
+  font: inherit;
 }
 
 h1,
@@ -101,37 +111,97 @@ header ul a:hover {
 /* Styles for hero section */
 #hero {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   background-color: var(--bg-dark-section);
   min-height: 300px;
   height: auto;
   position: relative;
+  text-wrap: nowrap;
+  font-size: 0.8vw;
+  padding: 0px 32px;
 }
-#hero h2 {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 2.4em;
-  color: var(--text-primary-on-dark);
-  margin: 32px;
-}
-#hero p {
-  color: var(--text-secondary-on-light);
-  font-size: 1em;
-  margin: 0px 32px;
-}
-#hero img {
-  display: block;
-  margin: 32px;
+
+#hero .second {
+  display: flex;
   width: 100%;
-  max-width: 200px;
-  height: auto;
-  object-fit: contain;
+  justify-content: center;
+  margin: 0px;
+  opacity: 0;
+  animation: showSecond 2s cubic-bezier(0.7, 0, 0.4, 1) 0.2s forwards;
+  img {
+    max-width: 80%;
+    margin: 0px 16px;
+  }
 }
-#hero .main-description {
-  font-size: 1.2em;
-  color: var(--main-primary);
-  margin: 8px 16px;
+@keyframes showSecond {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#hero .first {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  h2 {
+    opacity: 0;
+    text-transform: uppercase;
+    font-size: 8em;
+    color: var(--text-primary-on-dark);
+    animation: showName 2s ease-in-out 0.2s forwards;
+  }
+  p {
+    color: var(--text-secondary-on-light);
+    font-size: 2em;
+    opacity: 0;
+  }
+  .main-description {
+    text-transform: uppercase;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 3em;
+    color: var(--main-primary);
+    opacity: 0;
+    animation: showDescription 2s cubic-bezier(0.7, 0, 0.4, 1) 0.2s forwards;
+  }
+  .bottomText {
+    animation: showText 1.6s cubic-bezier(0.7, 0, 0.4, 1) 0.6s forwards;
+  }
+  .topText {
+    animation: showText 1s ease-out 1.2s forwards;
+  }
+}
+@keyframes showName {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes showDescription {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes showText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* styles for footer */
