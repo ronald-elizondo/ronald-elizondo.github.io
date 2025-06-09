@@ -88,6 +88,9 @@ header {
   color: var(--text-primary-on-dark);
   text-transform: uppercase;
   position: relative;
+  min-height: 3.5rem;
+  padding: 0.5rem 1rem;
+  font-size: clamp(0.875rem, 2vw, 1rem);
 }
 
 header ul li {
@@ -125,7 +128,7 @@ footer {
 #hero {
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 3.5rem);
   height: auto;
   position: relative;
   text-wrap: nowrap;
@@ -284,6 +287,9 @@ header {
 }
 
 @media (max-width: 500px) {
+  header {
+    padding: 0.24rem 0.5rem;
+  }
   #hero {
     flex-direction: column;
   }
