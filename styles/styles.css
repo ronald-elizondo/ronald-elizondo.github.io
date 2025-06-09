@@ -45,10 +45,10 @@
 html {
   width: 100%;
   max-width: 100vw;
+  font-size: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
 }
 
 body {
-  line-height: 1.6;
   margin: 0 auto;
   padding: 0 32px;
   font-family: "Source Serif 4", serif;
@@ -84,13 +84,10 @@ header {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  background-color: var(--bg-dark-section);
   color: var(--text-primary-on-dark);
   text-transform: uppercase;
   position: relative;
-  min-height: 3.5rem;
   padding: 0.5rem 1rem;
-  font-size: clamp(0.875rem, 2vw, 1rem);
 }
 
 header ul li {
@@ -132,7 +129,6 @@ footer {
   height: auto;
   position: relative;
   text-wrap: nowrap;
-  font-size: 0.8vw;
   padding: 0px 32px;
 }
 
@@ -165,21 +161,21 @@ footer {
   h2 {
     opacity: 0;
     text-transform: uppercase;
-    font-size: 8em;
+    font-size: 3.4rem;
     color: var(--text-primary-on-dark);
     animation: showName 2s ease-in-out 0.2s forwards;
   }
   p {
     color: var(--text-secondary-on-light);
-    font-size: 2em;
     opacity: 0;
+    font-size: 0.8rem;
   }
   .main-description {
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-size: 3em;
+    font-size: 1.3rem;
     color: var(--main-primary);
     opacity: 0;
     animation: showDescription 2s cubic-bezier(0.7, 0, 0.4, 1) 0.2s forwards;
@@ -292,5 +288,14 @@ header {
   }
   #hero {
     flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    .first {
+      text-align: center;
+      text-wrap: wrap;
+      margin-bottom: 1rem;
+      justify-content: space-evenly;
+      flex: 1;
+    }
   }
 }
