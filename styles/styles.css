@@ -57,7 +57,7 @@ body {
   font-style: normal;
   color: var(--text-primary-on-light);
   background-color: var(--bg-primary);
-  max-width: 832px;
+  max-width: 1200px;
   width: 100%;
 }
 
@@ -125,6 +125,7 @@ footer {
 #hero {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   min-height: calc(100vh - 3.5rem);
   height: auto;
   position: relative;
@@ -134,13 +135,11 @@ footer {
 
 #hero .second {
   display: flex;
-  width: 100%;
   justify-content: center;
   margin: 0px;
   opacity: 0;
   animation: showSecond 2s cubic-bezier(0.7, 0, 0.4, 1) 0.2s forwards;
   img {
-    max-width: 80%;
     margin: 0px 16px;
   }
 }
