@@ -346,27 +346,3 @@ header {
   top: 0;
   z-index: 1000;
 }
-
-@media (max-width: 600px) {
-  header {
-    padding: 0 0.5rem;
-
-    #logo-navbar {
-      margin: 4px 0px;
-    }
-  }
-  #hero {
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    padding: 0;
-    min-height: calc(100vh - 2rem);
-    .first {
-      text-align: center;
-      text-wrap: wrap;
-      margin-bottom: 1rem;
-      justify-content: space-evenly;
-      flex: 1;
-    }
-  }
-}
