@@ -144,19 +144,27 @@ h3 {
   color: var(--text-primary-on-dark);
 }
 
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
 /*******************************************/
 /********Styles for header section**********/
 header {
-  display: flex;
-  justify-content: space-between;
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 0 0.8rem;
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 -5px 21px 2px var(--bg-secondary-dark);
+
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
 
   nav {
     display: flex;
