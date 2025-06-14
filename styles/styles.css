@@ -193,7 +193,7 @@ header {
 }
 
 #logo-navbar {
-  width: 24px;
+  width: 1.5rem;
   margin: 0.5rem 1rem;
 }
 
@@ -214,8 +214,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: calc(100vh - 3.5rem);
-  height: auto;
+  height: calc(100vh - 2.5rem);
   position: relative;
   padding: 0px 32px;
 }
