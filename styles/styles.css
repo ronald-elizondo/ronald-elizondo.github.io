@@ -211,22 +211,22 @@ footer {
 
 /* Styles for hero section */
 #hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   height: calc(100vh - 2.5rem);
-  position: relative;
-  padding: 0px 32px;
+
+  .content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 #hero .second {
   display: flex;
   justify-content: center;
-  margin: 0px;
-  opacity: 0;
   animation: showSecond 2s cubic-bezier(0.7, 0, 0.4, 1) 0.2s forwards;
   img {
-    margin: 0px 16px;
+    width: 80%;
+    max-width: 40vh;
   }
 }
 @keyframes showSecond {
@@ -241,34 +241,37 @@ footer {
 #hero .first {
   display: flex;
   flex-direction: column;
-  text-align: left;
+  justify-content: space-evenly;
+  text-align: center;
+  height: 100%;
+  line-height: 1.1;
 
   h2 {
     opacity: 0;
     text-transform: uppercase;
-    font-size: 3.4rem;
+    font-size: min(16vh, 22vw, 5.5rem);
     color: var(--text-primary-on-dark);
     animation: showName 2s ease-in-out 0.2s forwards;
   }
   p {
     color: var(--text-secondary-on-light);
     opacity: 0;
-    font-size: 0.8rem;
+    font-size: min(5vw, 1.3rem);
   }
   .main-description {
     text-transform: uppercase;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: min(6vh, 8vw, 2.1rem);
     color: var(--main-primary);
     opacity: 0;
     animation: showDescription 2s cubic-bezier(0.7, 0, 0.4, 1) 0.2s forwards;
   }
-  .bottomText {
+  .bottom-text {
     animation: showText 1.6s cubic-bezier(0.7, 0, 0.4, 1) 0.6s forwards;
   }
-  .topText {
+  .top-text {
     animation: showText 1s ease-out 1.2s forwards;
   }
 }
