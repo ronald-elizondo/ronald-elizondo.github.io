@@ -225,8 +225,9 @@ footer {
   justify-content: center;
   animation: showSecond 2s cubic-bezier(0.7, 0, 0.4, 1) 0.2s forwards;
   img {
-    width: 80%;
-    max-width: 40vh;
+    width: 40vmin;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
   }
 }
 @keyframes showSecond {
