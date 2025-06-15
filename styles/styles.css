@@ -304,6 +304,16 @@ footer {
   }
 }
 
+@media (max-width: 800px) and (orientation: landscape) {
+  #hero .content-wrapper {
+    flex-direction: row;
+
+    .first {
+      text-align: left;
+    }
+  }
+}
+
 /* styles for footer */
 footer {
   background-color: #4682b4;
