@@ -127,7 +127,7 @@ body {
   font-weight: 500;
   font-style: normal;
   color: var(--text-primary-on-light);
-  background-color: var(--bg-primary);
+  background-color: var(--main-primary);
 }
 
 h1,
@@ -230,12 +230,9 @@ footer {
       var(--grid-alpha) 0 1px,
       transparent 1px 30px
     ),
-    radial-gradient(
-      circle,
-      var(--bg-secondary-dark) 1%,
-      var(--bg-dark-section) 100%
-    );
-  background-size: 15px 15px, 15px 15px, 100% 600%;
+    var(--bg-dark-section);
+  background-size: 30px, 30px, 200%;
+  background-position: 0% 0%, 0% 0%, 0% 200%;
 }
 
 #hero .second {
