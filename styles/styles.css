@@ -230,9 +230,12 @@ footer {
       var(--grid-alpha) 0 1px,
       transparent 1px 30px
     ),
-    var(--bg-dark-section);
-  background-size: 30px, 30px, 200%;
-  background-position: 0% 0%, 0% 0%, 0% 200%;
+    radial-gradient(
+      circle,
+      var(--bg-secondary-dark) 1%,
+      var(--bg-dark-section) 100%
+    );
+  background-size: 15px 15px, 15px 15px, 100% 600%;
 }
 
 #hero .second {
