@@ -352,6 +352,9 @@ footer {
     animation: showText 1s ease-out 1.2s forwards;
   }
 }
+#contacto {
+  font-size: 1.3rem;
+}
 @keyframes showName {
   from {
     opacity: 0;
@@ -433,6 +436,9 @@ footer {
     .second img {
       width: 40vmin;
     }
+  }
+  #contacto {
+    font-size: 1.44rem;
   }
 }
 
