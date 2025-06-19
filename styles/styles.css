@@ -348,6 +348,8 @@ footer {
 
     .second img {
       width: 100%;
+      border-radius: 10%;
+      mask-image: linear-gradient(to bottom, black 90%, transparent);
     }
   }
 }
@@ -379,8 +381,6 @@ footer {
     }
     .second img {
       width: 40vmin;
-      border-radius: 10%;
-      mask-image: linear-gradient(to bottom, black 90%, transparent);
     }
   }
 }
