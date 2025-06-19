@@ -24,7 +24,7 @@
 
   /* --- UI Elements & States --- */
   --button-primary-bg: var(--main-primary);
-  --button-primary-text: #ffffff;
+  --button-primary-text: var(--text-primary-on-dark);
   --button-primary-hover-bg: #3a6b8f; /* Darker shade of Steel Blue for hover */
   --button-secondary-bg: var(--bg-secondary);
   --button-secondary-text: var(--main-primary);
@@ -161,6 +161,53 @@ h3 {
   }
 }
 
+button {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: var(--button-primary-text);
+  cursor: pointer;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  display: inline-block;
+  background-color: var(--button-primary-bg);
+  width: fit-content;
+  transition-duration: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+button:hover {
+  box-shadow: 0 0 8px 0 var(--button-primary-hover-bg),
+    0 0 13px 0 var(--button-primary-hover-bg);
+  background-color: var(--button-primary-hover-bg);
+}
+button:after {
+  content: "";
+  background: var(--button-primary-text);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  opacity: 0.8;
+  transition: 0s;
+}
 /*******************************************/
 /********Styles for header section**********/
 header {
