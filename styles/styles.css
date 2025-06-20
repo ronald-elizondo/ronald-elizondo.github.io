@@ -300,6 +300,7 @@ footer {
   display: flex;
   justify-content: center;
   animation: showSecond 2s cubic-bezier(0.7, 0, 0.4, 1) 0.2s forwards;
+  opacity: 0;
   img {
     opacity: 0;
     width: 40vmin;
