@@ -272,12 +272,8 @@ footer {
 #hero {
   height: calc(100vh - 2.5rem);
   height: calc(100dvh - 2.5rem);
-
-  .content-wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-  }
+  position: relative;
+  overflow: hidden;
 
   background: repeating-linear-gradient(
       var(--grid-alpha) 0 1px,
@@ -294,6 +290,39 @@ footer {
       var(--bg-dark-section) 100%
     );
   background-size: 15px 15px, 15px 15px, 100% 600%;
+
+  .content-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#hero-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-25%, -25%);
+  width: 200%;
+  mix-blend-mode: color-dodge;
+  animation: move-svg 2s linear forwards,
+    move-svg-2 5s linear 2s infinite forwards;
+}
+@keyframes move-svg {
+  from {
+    transform: translate(-25%, -25%);
+  }
+  to {
+    transform: translate(15%, 15%);
+  }
+}
+@keyframes move-svg-2 {
+  from {
+    transform: translate(-65%, -65%);
+  }
+  to {
+    transform: translate(15%, 15%);
+  }
 }
 
 #hero .second {
