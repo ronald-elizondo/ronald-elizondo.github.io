@@ -434,10 +434,6 @@ footer {
       mask-image: linear-gradient(to bottom, black 90%, transparent);
     }
   }
-  #hero-contact-buttom {
-    text-align: left;
-    margin: 0;
-  }
 }
 @media (aspect-ratio > 1.7) {
   #hero .content-wrapper {
