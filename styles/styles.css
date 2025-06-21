@@ -427,11 +427,11 @@ footer {
       text-align: left;
       white-space: nowrap;
     }
-  }
-  #hero .second img {
-    /* width: 100%; */
-    border-radius: 10%;
-    mask-image: linear-gradient(to bottom, black 90%, transparent);
+    .second img {
+      /* width: 100%; */
+      border-radius: 10%;
+      mask-image: linear-gradient(to bottom, black 90%, transparent);
+    }
   }
   #hero-contact-button {
     text-align: left;
