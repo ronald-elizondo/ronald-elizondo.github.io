@@ -328,13 +328,17 @@ footer {
 #hero .second {
   display: flex;
   justify-content: center;
+  align-items: center;
   animation: showSecond 2s cubic-bezier(0.7, 0, 0.4, 1) 0.2s forwards;
   opacity: 0;
 }
-#hero .second img {
+.hero-img-wrapper {
   width: 50vmin;
+  aspect-ratio: 1;
+}
+#hero .second img {
   object-fit: contain;
-  aspect-ratio: 1 / 1;
+  width: 100%;
 }
 @keyframes showSecond {
   from {
@@ -427,8 +431,7 @@ footer {
       text-align: left;
       white-space: nowrap;
     }
-    .second img {
-      /* width: 100%; */
+    .hero-img-wrapper {
       border-radius: 10%;
       mask-image: linear-gradient(to bottom, black 90%, transparent);
     }
@@ -449,9 +452,6 @@ footer {
       width: 40%;
       align-items: flex-end;
     }
-    .second img {
-      /* height: 100%; */
-    }
   }
 }
 @media (width > 1024px) {
@@ -465,8 +465,7 @@ footer {
       right: 0;
       bottom: 21vh;
     }
-    .second img {
-      width: 50vmin;
+    .hero-img-wrapper {
       max-width: 344px;
     }
     .first {
