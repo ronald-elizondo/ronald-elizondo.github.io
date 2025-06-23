@@ -269,6 +269,9 @@ footer {
 
 /*******************************************/
 /*********Styles for hero section***********/
+#hero-bg {
+  display: none;
+}
 #hero {
   height: calc(100vh - 2.5rem);
   height: calc(100dvh - 2.5rem);
@@ -469,11 +472,26 @@ footer {
       max-width: 344px;
     }
     .first {
-      margin-left: 8%;
+      padding-left: 8%;
+      backdrop-filter: blur(4px);
+      border-radius: 10%;
     }
   }
   #hero-contact-button {
     font-size: 1.44rem;
+  }
+  #hero-bg {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vmax;
+    aspect-ratio: 1;
+    object-fit: contain;
+    background-image: url("../assets/hero-bg.svg");
+    background-size: contain;
+    mix-blend-mode: multiply;
   }
 }
 
