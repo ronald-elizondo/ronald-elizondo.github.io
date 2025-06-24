@@ -434,7 +434,7 @@ footer {
       text-align: left;
       white-space: nowrap;
     }
-    .hero-img-wrapper {
+    img {
       border-radius: 10%;
       mask-image: linear-gradient(to bottom, black 90%, transparent);
     }
