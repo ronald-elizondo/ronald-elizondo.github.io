@@ -456,12 +456,13 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 300%;
+    width: 200%;
     height: 200%;
-    transform: translate(-50%, -50%);
-    background-image: url("../images/Front.png");
+    transform: rotate(-5deg) translate(-50%, -50%);
+    background-image: url("../images/hero-bg.png");
+    background-size: 30%;
     mix-blend-mode: multiply;
-    opacity: 0.4;
+    opacity: 0.5;
   }
 }
 @media (width > 1024px) and (aspect-ratio > 1.3) {
