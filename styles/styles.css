@@ -309,7 +309,7 @@ footer {
   width: 250%;
   height: 250%;
   mix-blend-mode: color-dodge;
-
+  background-repeat: no-repeat;
   animation: move-svg 10s linear infinite forwards;
 }
 @keyframes move-svg {
