@@ -301,17 +301,16 @@ footer {
 #hero .content-wrapper::after {
   content: "";
   position: absolute;
-  /* background-color: red; */
   background-image: url("../images/hero-bg-animation.svg");
   background-size: 120%;
   top: 0;
   left: 0;
-  /* transform: translate(-125%, -125%); */
+  transform: translate(-125%, -125%);
   width: 250%;
   height: 250%;
   mix-blend-mode: color-dodge;
 
-  /* animation: move-svg 10s linear infinite forwards; */
+  animation: move-svg 10s linear infinite forwards;
 }
 @keyframes move-svg {
   from {
