@@ -259,8 +259,7 @@ main,
 #skills,
 #services,
 #cv,
-#portfolio,
-footer {
+#portfolio {
   opacity: 0;
   height: 0;
   width: 0;
