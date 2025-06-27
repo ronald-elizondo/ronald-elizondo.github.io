@@ -299,6 +299,9 @@ main,
     flex-direction: column;
   }
 }
+#hero .first, #hero .second {
+  z-index: 1;
+}
 
 #hero .content-wrapper::after {
   content: "";
