@@ -212,9 +212,11 @@ button:active:after {
 /********Styles for header section**********/
 header {
   position: sticky;
+  background-color: rgba(20, 20, 20, 0.8);
   top: 0;
   z-index: 1000;
   box-shadow: 0 -5px 21px 2px var(--bg-secondary-dark);
+  backdrop-filter: blur(3px);
 
   .content-wrapper {
     display: flex;
