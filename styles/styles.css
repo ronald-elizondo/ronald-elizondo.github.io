@@ -271,8 +271,9 @@ main,
 /*******************************************/
 /*********Styles for hero section***********/
 #hero {
-  height: calc(100vh - 2.5rem);
-  height: calc(100dvh - 2.5rem);
+  height: calc(100vh);
+  height: calc(100dvh);
+  margin-top: -2.5rem;
   position: relative;
   overflow: hidden;
 
