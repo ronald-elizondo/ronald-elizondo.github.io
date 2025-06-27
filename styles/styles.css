@@ -305,11 +305,11 @@ main,
   top: 0;
   left: 0;
   transform: translate(-125%, -125%);
-  width: 250%;
-  height: 250%;
+  width: 500%;
+  height: 500%;
   mix-blend-mode: color-dodge;
   background-repeat: no-repeat;
-  animation: move-svg 10s linear infinite forwards;
+  animation: move-svg 8s linear infinite forwards;
 }
 @keyframes move-svg {
   from {
