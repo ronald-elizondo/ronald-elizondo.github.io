@@ -143,6 +143,23 @@ h3 {
   background-color: var(--bg-dark-section);
   color: var(--text-primary-on-dark);
 }
+.grid-bg {
+  background: repeating-linear-gradient(
+      var(--grid-alpha) 0 1px,
+      transparent 1px 30px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      var(--grid-alpha) 0 1px,
+      transparent 1px 30px
+    ),
+    radial-gradient(
+      circle,
+      var(--bg-secondary-dark) 1%,
+      var(--bg-dark-section) 100%
+    );
+  background-size: 15px 15px, 15px 15px, 100% 600%;
+}
 
 .content-wrapper {
   max-width: 1024px;
@@ -276,23 +293,6 @@ main,
   margin-top: -2.5rem;
   position: relative;
   overflow: hidden;
-}
-.grid-bg {
-  background: repeating-linear-gradient(
-      var(--grid-alpha) 0 1px,
-      transparent 1px 30px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      var(--grid-alpha) 0 1px,
-      transparent 1px 30px
-    ),
-    radial-gradient(
-      circle,
-      var(--bg-secondary-dark) 1%,
-      var(--bg-dark-section) 100%
-    );
-  background-size: 15px 15px, 15px 15px, 100% 600%;
 }
 #hero .content-wrapper {
   height: 100%;
