@@ -14,7 +14,9 @@
   --text-primary-on-light: #333333; /* Dark Gray - For primary text on light backgrounds (Beige, White) */
   --text-secondary-on-light: #64647c; /* Slate Gray/Manatee - For secondary text, subtitles on light backgrounds */
   --text-primary-on-dark: #f5f5f5; /* Light Beige/Off-White - For text on dark backgrounds (Dark Slate Blue) */
-  --text-link: #4f71a9; /* Slightly desaturated Steel Blue - For hyperlinks, can be underlined with main-primary */
+  --text-link: #476dae; /* Slightly desaturated Steel Blue - For hyperlinks, can be underlined with main-primary */
+  --text-link-visited: #3a5b8e; /* Lighter Steel Blue - For visited links, slightly desaturated for distinction */
+  --text-link-hover: var(--main-primary);
 
   /* --- Borders & Shadows --- */
   --border-light: #c4c4c4; /* Light Gray - For subtle borders on cards, inputs */
@@ -241,6 +243,25 @@ button:active:after {
   width: 100%;
   opacity: 0.8;
   transition: 0s;
+}
+a {
+  color: var(--text-link);
+  transition: color 0.3s ease-in-out;
+}
+a:link {
+  color: var(--text-link);
+}
+a:visited {
+  color: var(--text-link-visited);
+}
+a:hover, a:focus {
+  color: var(--text-link-hover);
+}
+a:focus{
+  text-decoration-color: var(--main-accent-hover);
+}
+a:active {
+  color: var(--main-accent-hover);
 }
 /*******************************************/
 /********Styles for header section**********/
