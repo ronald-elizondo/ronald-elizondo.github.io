@@ -531,9 +531,46 @@ main,
   }
 }
 
-/* styles for footer */
+/********************************************/
+/*************Styles for footer**************/
 footer {
-  background-color: #4682b4;
-  color: #c4c4c4;
-  position: relative;
+  padding: 1.5rem 0;
+}
+footer .content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+footer h2 {
+  text-align: center;
+  margin-block: 1rem;
+}
+footer p {
+  text-align: center;
+  color: var(--text-primary-on-dark);
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  padding-block: 0.8rem;
+}
+footer .external-link {
+  display: inline-flex;
+}
+.cc0-img {
+  width: 1.5rem;
+  margin-left: 0.5rem;
+  vertical-align: text-bottom;
+}
+.footer-license {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer-license p {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
 }
