@@ -153,7 +153,7 @@ small {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
-  color: var(--text-primary-on-light);
+  color: var(--text-secondary-on-light);
   font-size: 0.89rem;
 }
 .dark-bg {
