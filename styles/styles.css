@@ -306,6 +306,9 @@ header {
     text-decoration: none;
     color: var(--text-primary-on-dark);
   }
+  ul a:visited {
+    color: var(--text-primary-on-dark);
+  }
 }
 
 #logo-navbar {
