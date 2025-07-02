@@ -310,10 +310,19 @@ header {
     color: var(--text-primary-on-dark);
   }
 }
-
-#logo-navbar {
+#logo-link {
+  background-color: white;
   width: 1.5rem;
+  height: 1.5rem;
   margin: 0.5rem 1rem;
+  mask-image: url("../images/RE.svg");
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  opacity: 1;
+}
+#logo-link:hover {
+  background-color: var(--main-primary);
 }
 
 main,
