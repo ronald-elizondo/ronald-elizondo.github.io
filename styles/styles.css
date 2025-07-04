@@ -562,3 +562,32 @@ footer .external-link {
   margin: 0;
   line-height: 1.5;
 }
+#social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social-item {
+  display: inline-block;
+  margin-inline: 0.5rem;
+}
+.social-item a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-primary-on-dark);
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+  font-size: clamp(0.8rem, 0.5rem + 0.4vw, 1.2rem);
+}
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+  padding: 0.5rem;
+  align-self: center;
+}
