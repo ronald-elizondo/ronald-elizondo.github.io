@@ -309,6 +309,9 @@ header {
   ul a:visited {
     color: var(--text-primary-on-dark);
   }
+  ul a:link {
+    color: var(--text-primary-on-dark);
+  }
 }
 #logo-link {
   background-color: white;
