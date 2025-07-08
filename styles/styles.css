@@ -538,13 +538,15 @@ footer h2 {
   text-align: center;
   margin-block: 1rem;
 }
+.footer-text {
+  margin-bottom: 1rem;
+}
 footer p {
   text-align: center;
   color: var(--text-primary-on-dark);
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  padding-block: 0.8rem;
 }
 footer .external-link {
   display: inline-flex;
