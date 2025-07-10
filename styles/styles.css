@@ -589,7 +589,7 @@ footer .external-link {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 400;
   font-size: clamp(0.9rem, 0.6rem + 0.4vw, 1.2rem);
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s linear;
 }
 .social-item a:hover,
 .social-item a:focus {
@@ -603,8 +603,31 @@ footer .external-link {
 }
 
 .social-icon {
-  width: 1.5em;
-  height: 1.5rem;
-  margin: 0.375rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.25rem;
+  margin: 0.25rem;
   align-self: center;
+  color: white;
+  transition: color 0.3s linear;
+  border-radius: 20%;
+}
+.social-item:hover .mail-icon {
+  background-color: var(--text-link-hover);
+}
+
+.social-item:hover .github-logo {
+  color: black;
+  background-color: white;
+}
+.social-item:hover .linkedin-logo {
+  color: #0077b5;
+  background-color: white;
+  box-shadow: inset 0 0 0 5px #0077b5;
+  box-sizing: border-box;
+  border: 2px solid #0077b5;
+}
+.social-item:hover .medium-logo {
+  color: black;
+  background-color: white;
 }
