@@ -1,6 +1,9 @@
-<svg id="mail-logo" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+<svg id="mail-logo" viewBox="0 0 524 524" xmlns="http://www.w3.org/2000/svg">
 <path
   fill="currentColor"
+  transform="translate(6,6)"
+  stroke="currentColor"
+  stroke-width="10"
   d="M454.4,90.667H54.613C20.907,90.667,0,110.293,0,141.76v228.373c0,30.613,21.333,51.2,53.12,51.2H454.4
     c32.853,0,57.6-21.973,57.6-51.2V141.76C512,110.72,489.387,90.667,454.4,90.667z M54.72,112H454.4
     c5.973,0,16.427,1.067,24.533,6.4l-214.08,172.16L32.427,117.653C37.867,114.027,45.227,112,54.72,112z
