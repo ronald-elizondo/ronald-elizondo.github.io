@@ -297,10 +297,6 @@ header {
   }
   ul li {
     display: flex;
-    :hover {
-      background-color: var(--main-primary);
-      color: var(--bg-dark-section);
-    }
   }
   ul a {
     padding: 0 0.5rem;
@@ -315,6 +311,11 @@ header {
   ul a:link {
     color: var(--text-primary-on-dark);
   }
+}
+header li:hover,
+header a:focus {
+  background-color: var(--main-primary);
+  color: var(--bg-dark-section);
 }
 #logo {
   width: 100%;
