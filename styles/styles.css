@@ -270,6 +270,7 @@ a:focus {
 }
 a:active {
   color: var(--main-accent-hover);
+  outline: none;
 }
 /*******************************************/
 /********Styles for header section**********/
