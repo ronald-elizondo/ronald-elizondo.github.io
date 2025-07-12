@@ -260,6 +260,9 @@ a:focus {
 }
 a:focus {
   text-decoration-color: var(--main-accent-hover);
+  text-underline-offset: 0.2lh;
+  outline: 1px solid var(--main-accent-hover);
+  outline-offset: 0.1lh;
 }
 a:active {
   color: var(--main-accent-hover);
