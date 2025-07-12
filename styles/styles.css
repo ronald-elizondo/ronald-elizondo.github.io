@@ -452,6 +452,10 @@ main,
   font-size: clamp(1rem, 0.5rem + 0.8vw, 1.5rem);
   animation: showName 2s cubic-bezier(0.7, 0, 0.4, 1) 0.2s forwards;
 }
+#hero-contact-button:focus-visible {
+  outline: 0.2rem solid var(--main-accent-hover);
+  outline-offset: 0.2lh;
+}
 @keyframes showName {
   from {
     opacity: 0;
