@@ -121,6 +121,7 @@ select {
 /* Global Styles */
 html {
   font-size: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem);
+  scroll-behavior: smooth;
 }
 
 body {
