@@ -595,7 +595,11 @@ footer .external-link {
   color: var(--text-link-hover);
 }
 .social-item a:focus {
+  text-decoration: underline;
+  text-underline-offset: 0.2lh;
   text-decoration-color: var(--main-accent-hover);
+  outline: 1px solid var(--main-accent-hover);
+  outline-offset: 0.2lh;
 }
 .social-item a:active {
   color: var(--main-accent-hover);
@@ -612,16 +616,19 @@ footer .external-link {
   border-radius: 20%;
   position: relative;
 }
-.social-item:hover .mail-icon {
+.social-item:hover .mail-icon,
+.social-item a:focus .mail-icon {
   background-color: var(--text-link-hover);
 }
 
-.social-item:hover .github-logo {
+.social-item:hover .github-logo,
+.social-item a:focus .github-logo {
   color: black;
   background-color: white;
 }
 
-.social-item:hover .medium-logo {
+.social-item:hover .medium-logo,
+.social-item a:focus .medium-logo {
   color: black;
   background-color: white;
 }
@@ -633,10 +640,12 @@ footer .external-link {
   top: 0;
   left: 0;
 }
-.social-item:hover .linkedin-logo {
+.social-item:hover .linkedin-logo,
+.social-item a:focus .linkedin-logo {
   background-color: #0077b5;
 }
-.social-item:hover .linkedin-original {
+.social-item:hover .linkedin-original,
+.social-item a:focus .linkedin-original {
   opacity: 0;
   pointer-events: none;
 }
@@ -645,7 +654,8 @@ footer .external-link {
   pointer-events: none;
   /* transition: opacity 0.5s linear; */
 }
-.social-item:hover .linkedin-inverted {
+.social-item:hover .linkedin-inverted,
+.social-item a:focus .linkedin-inverted {
   opacity: 1;
   pointer-events: auto;
   /* transition: opacity 0.5s linear; */
