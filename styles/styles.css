@@ -236,7 +236,11 @@ button:after {
   opacity: 0;
   transition: all 0.8s;
 }
-
+button:focus-visible {
+  outline: 1px solid var(--main-accent-hover);
+  outline-offset: 0.2lh;
+  background: var(--main-accent-hover);
+}
 button:active:after {
   padding: 0;
   margin: 0;
