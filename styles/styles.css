@@ -454,13 +454,59 @@ main,
   }
 }
 #hero-contact-button {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: var(--button-primary-text);
+  cursor: pointer;
+  border: none;
+  padding: 0.5lh 0.8lh;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  display: inline-block;
+  background-color: var(--button-primary-bg);
+  width: fit-content;
+  position: relative;
+  transition: all 0.8s;
   opacity: 0;
   font-size: clamp(1rem, 0.5rem + 0.8vw, 1.5rem);
   animation: showName 2s cubic-bezier(0.7, 0, 0.4, 1) 0.2s forwards;
 }
-#hero-contact-button:focus-visible {
+#hero-contact-button:hover {
+  box-shadow: 0 0 8px 0 var(--button-primary-hover-bg),
+    0 0 13px 0 var(--button-primary-hover-bg);
+  background-color: var(--button-primary-hover-bg);
+}
+#hero-contact-button:after {
+  content: "";
+  background: var(--button-primary-text);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.8s;
+}
+#hero-contact-button:active {
+  background-color: var(--text-primary-on-dark);
+  opacity: 0.8;
+  transition: 0s;
+}
+#hero-contact-button:focus {
   outline: 0.2rem solid var(--main-accent-hover);
   outline-offset: 0.2lh;
+}
+#hero-contact-button:active {
+  outline: none;
 }
 @keyframes showName {
   from {
