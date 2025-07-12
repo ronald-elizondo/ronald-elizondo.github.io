@@ -318,14 +318,13 @@ header a:focus {
   color: var(--bg-dark-section);
 }
 #logo {
-  width: 100%;
-  height: 100%;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 #logo-link {
   color: white;
-  width: 1.5rem;
-  height: 1.5rem;
-  margin: 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
 }
 #logo-link:hover {
   color: var(--main-primary);
