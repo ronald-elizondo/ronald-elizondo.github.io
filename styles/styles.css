@@ -343,6 +343,9 @@ header a:focus {
   color: var(--text-primary-on-dark);
 }
 
+.no-break {
+  white-space: nowrap;
+}
 #skills,
 #services,
 #cv,
