@@ -343,15 +343,11 @@ header a:focus {
   color: var(--text-primary-on-dark);
 }
 
-main,
 #skills,
 #services,
 #cv,
 #portfolio {
-  opacity: 0;
-  height: 0;
-  width: 0;
-  overflow: hidden;
+  display: none;
 }
 
 /*******************************************/
@@ -586,6 +582,10 @@ main,
     opacity: 0.25;
   }
 }
+
+/********************************************/
+/**************Styles for main***************/
+/********************************************/
 
 /********************************************/
 /*************Styles for footer**************/
