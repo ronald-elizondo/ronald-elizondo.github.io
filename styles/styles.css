@@ -259,6 +259,10 @@ a:link {
 a:visited {
   color: var(--text-link-visited);
 }
+a:active {
+  color: var(--main-accent-hover);
+  outline: none;
+}
 a:hover,
 a:focus {
   color: var(--text-link-hover);
@@ -268,10 +272,6 @@ a:focus {
   text-underline-offset: 0.2lh;
   outline: 1px solid var(--main-accent-hover);
   outline-offset: 0.1lh;
-}
-a:active {
-  color: var(--main-accent-hover);
-  outline: none;
 }
 /*******************************************/
 /********Styles for header section**********/
@@ -311,10 +311,10 @@ header {
     text-decoration: none;
     color: var(--text-primary-on-dark);
   }
-  ul a:visited {
+  ul a:link {
     color: var(--text-primary-on-dark);
   }
-  ul a:link {
+  ul a:visited {
     color: var(--text-primary-on-dark);
   }
 }
@@ -334,6 +334,13 @@ header a:focus {
 }
 #logo-link:hover {
   color: var(--main-primary);
+}
+#logo-link:active {
+  color: var(--main-accent-hover);
+  outline: none;
+}
+#logo-link:focus {
+  color: var(--text-primary-on-dark);
 }
 
 main,
