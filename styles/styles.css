@@ -11,7 +11,7 @@
   --bg-secondary-dark: #2f323f; /* Dark Slate Blue/Charcoal - For secondary backgrounds, such as cards or sections on dark mode */
 
   /* --- Text Colors --- */
-  --text-primary-on-light: #333333; /* Dark Gray - For primary text on light backgrounds (Beige, White) */
+  --text-primary-on-light: #0a0a0a; /* Dark Gray - For primary text on light backgrounds (Beige, White) */
   --text-secondary-on-light: #64647c; /* Slate Gray/Manatee - For secondary text, subtitles on light backgrounds */
   --text-primary-on-dark: #f5f5f5; /* Light Beige/Off-White - For text on dark backgrounds (Dark Slate Blue) */
   --text-link: #476dae; /* Slightly desaturated Steel Blue - For hyperlinks, can be underlined with main-primary */
@@ -605,9 +605,6 @@ main strong {
   width: fit-content;
   margin-left: auto;
   margin-bottom: 2rem;
-}
-main p {
-  color: #0a0a0a;
 }
 /********************************************/
 /**************Styles for main***************/
