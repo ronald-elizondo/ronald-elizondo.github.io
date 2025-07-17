@@ -141,6 +141,7 @@ h3 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
+  color: var(--text-primary-on-light);
 }
 h1 {
   font-size: 3.77rem;
@@ -150,6 +151,14 @@ h2 {
 }
 h3 {
   font-size: 1.44rem;
+}
+h4 {
+  font-family: "Source Sans 3", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3rem;
+  color: var(--text-primary-on-light);
 }
 small {
   font-family: "Source Serif 4", serif;
