@@ -172,6 +172,12 @@ small {
   background-color: var(--bg-dark-section);
   color: var(--text-primary-on-dark);
 }
+.dark-bg h1,
+.dark-bg h2,
+.dark-bg h3,
+.dark-bg h4 {
+  color: var(--text-primary-on-dark);
+}
 .grid-bg {
   background: repeating-linear-gradient(
       var(--grid-alpha) 0 1px,
