@@ -610,16 +610,19 @@ main h3 {
   color: var(--text-primary-on-dark);
   margin-top: 1rem;
 }
+main p,
 main strong {
   color: var(--text-primary-on-dark);
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   letter-spacing: 0.05lh;
+  margin-bottom: 2rem;
+}
+main strong {
   display: block;
   width: fit-content;
   margin-left: auto;
-  margin-bottom: 2rem;
 }
 /********************************************/
 /*************Styles for skills**************/
