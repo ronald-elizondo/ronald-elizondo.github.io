@@ -133,6 +133,7 @@ p {
   font-weight: 400;
   font-style: normal;
   color: var(--text-primary-on-light);
+  margin-bottom: 1rem;
 }
 h1,
 h2,
@@ -616,13 +617,13 @@ main strong {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
-  letter-spacing: 0.05lh;
-  margin-bottom: 2rem;
 }
 main strong {
   display: block;
   width: fit-content;
   margin-left: auto;
+  letter-spacing: 0.05lh;
+  margin-bottom: 1rem;
 }
 /********************************************/
 /*************Styles for skills**************/
