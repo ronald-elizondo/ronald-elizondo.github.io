@@ -1,7 +1,7 @@
 /* Color Palette Variables */
 :root {
   /* --- Core Colors --- */
-  --main-primary: #4682b4; /* Steel Blue - Brand */
+  --main-primary: #47a; /* Steel Blue - Brand */
   --main-accent-hover: #c49f3b; /* Yellow-Gold - For interactive elements on hover/focus */
 
   /* --- Backgrounds --- */
@@ -13,7 +13,7 @@
   /* --- Text Colors --- */
   --text-primary-on-light: #0a0a0a; /* Dark Gray - For primary text on light backgrounds (Beige, White) */
   --text-secondary-on-light: #64647c; /* Slate Gray/Manatee - For secondary text, subtitles on light backgrounds */
-  --text-primary-on-dark: #f5f5f5; /* Light Beige/Off-White - For text on dark backgrounds (Dark Slate Blue) */
+  --text-primary-on-dark: #fafafa; /* Light Beige/Off-White - For text on dark backgrounds (Dark Slate Blue) */
   --text-link: #476dae; /* Slightly desaturated Steel Blue - For hyperlinks, can be underlined with main-primary */
   --text-link-visited: #3a5b8e; /* Lighter Steel Blue - For visited links, slightly desaturated for distinction */
   --text-link-hover: var(--main-primary);
